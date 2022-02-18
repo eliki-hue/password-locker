@@ -14,3 +14,4 @@ class Credentials:
         self.accountName = accountName
         self.userName = userName
         self.password = password
+    
