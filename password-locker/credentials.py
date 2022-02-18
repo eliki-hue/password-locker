@@ -15,3 +15,11 @@ class Credentials:
         self.userName = userName
         self.password = password
     
+    def saveAccount(self):
+        '''
+        a function that saves a new account by appending 
+        it to the accountsCredentials array
+        '''
+
+        self.accountsCredentials.append(self)
+        

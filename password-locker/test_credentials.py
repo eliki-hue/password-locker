@@ -28,7 +28,7 @@ class TestCredentials(unittest.TestCase):
         '''
 
         self.new_account.saveAccount()
-        self.assertEqual(len(self.new_account),1)
+        self.assertEqual(len(Credentials.accountsCredentials),1)
         
 
 
