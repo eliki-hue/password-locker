@@ -11,4 +11,6 @@ class User:
         '''
         self.loginName = loginName
         self.loginPassword = loginPassword
-        
+
+    def saveLoginInfo(self):
+        User.user_login_information.append(self)
