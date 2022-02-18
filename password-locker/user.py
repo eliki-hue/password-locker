@@ -3,7 +3,7 @@ class User:
     User class to perform user login operations
     '''
     pass
-    user_login_information =[]
+    user_login_information =[] # an array to store user login information
     
     def __init__(self,loginName, loginPassword):
         '''
