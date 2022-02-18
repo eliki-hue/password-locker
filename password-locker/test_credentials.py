@@ -36,6 +36,16 @@ class TestCredentials(unittest.TestCase):
         '''
         self.assertEqual(Credentials.displayAccounts(), Credentials.accountsCredentials)
 
+    def test_deleteAccount(self):
+        '''
+        test function to test the deleteAccount function
+        '''
+        self.new_account.saveAccount()
+        test_account = Credentials("fb","eliki","1234")
+        test_account.saveAccount()
+
+        self.new_account.deleteAccount()
+        self.assertEqual(len(Credentials.accountsCredentials),2)
 
         
 

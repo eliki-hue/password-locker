@@ -22,4 +22,18 @@ class Credentials:
         '''
 
         self.accountsCredentials.append(self)
-        
+
+    @classmethod
+    def displayAccounts(cls):
+        '''
+        function that returns a list of all accounts
+        '''
+
+        return cls.accountsCredentials
+
+    def deleteAccount(self):
+        '''
+        function that delete a specific account credentials
+        '''
+        Credentials.accountsCredentials.remove(self)
+
