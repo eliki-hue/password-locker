@@ -24,9 +24,9 @@ class TestUser(unittest.TestCase):
     
     def test_saveLoginInfo(self):
         '''
-        saveLoginInfo function that saves the users login information
+        saveLoginInfo function that test if the login information are saved
         '''
-        self.new_user.saveInfo() #saving the user lgin information
+        self.new_user.saveLoginInfo() #saving the user lgin information
         self.assertEqual(len(User.user_login_information),1)
 
 

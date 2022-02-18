@@ -6,3 +6,10 @@ class TestCredentials(unittest.TestCase):
     '''
     test class that defines test cases for credentials behaviour
     '''
+
+
+
+
+
+if __name__ == '__main__':
+    unittest.main()
