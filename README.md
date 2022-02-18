@@ -7,7 +7,7 @@ The applicatio should enable the user to login using username and password, stor
 
 **Author information:** The author of the project is Elijah Kiragu, a student in Moringa.
 
-**Setup instructions:** access my github account then clone the project to your device.
+**Setup instructions:** access my github account then clone the project to your device or fork the repository.
 
 **Technologies used:** HTML, CSS, PYTHON and  BOOTSTRAP.
 
