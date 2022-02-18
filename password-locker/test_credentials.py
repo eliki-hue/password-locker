@@ -29,6 +29,14 @@ class TestCredentials(unittest.TestCase):
 
         self.new_account.saveAccount()
         self.assertEqual(len(Credentials.accountsCredentials),1)
+
+    def test_viewCredentials(self):
+        '''
+        test function for viewCredentials function, it returns a list of  all accounts
+        '''
+        self.assertEqual(Credentials.displayAccounts(), Credentials.accountsCredentials)
+
+
         
 
 
