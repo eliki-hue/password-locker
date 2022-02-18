@@ -1,5 +1,6 @@
-from user import User
-import unittest
+from user import User #impotting the User class
+import unittest #importing the unittest module
+from cgi import test
 
 
 class TestUser(unittest.TestCase):
@@ -10,4 +11,4 @@ class TestUser(unittest.TestCase):
         '''
         set up method to run before each test case.
         '''
-    self.new_user = User()
+        self.new_user = User('elijah', '13720')
