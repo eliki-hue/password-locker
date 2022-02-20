@@ -1,6 +1,8 @@
 import string
 import random
 
+from click import confirm
+
 class Credentials:
     '''
     Credential class to store username and passwords
@@ -40,7 +42,7 @@ class Credentials:
         '''
         Credentials.accountsCredentials.remove(self)
 
-    def passwordGenerator(self):
+    def passwordGenerator():
         '''
         a function that generates a random password to set for a new account password
         '''
@@ -49,11 +51,21 @@ class Credentials:
         passwordLength = int(input("Enter the password length: "))
 
         random.shuffle(characters) # mixes the letters and numbers
-        passwordList=[]
-        for i in range(passwordLength):
-            passwordList.append(random.choice(characters)) # picks a random character from character list
+        
+        generateAnotherPassword = True
+        while generateAnotherPassword:
+            passwordList=[]
 
-        password =(''.join(passwordList)) # converts the passwordList to string
-        print(password)
+            for i in range(passwordLength):
+                passwordList.append(random.choice(characters)) # picks a random character from character list
+
+            password =(''.join(passwordList)) # converts the passwordList to string
+            print(password)
+            likePassword = confirm("Do you like the generated password? ")
+            
+            if likePassword:
+                generateAnotherPassword =False
+            else:
+                print('Alternative password')
         return password
 
