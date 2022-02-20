@@ -53,11 +53,11 @@ class TestCredentials(unittest.TestCase):
         self.new_account.deleteAccount()
         self.assertEqual(len(Credentials.accountsCredentials),1)
 
-    # def test_generatePassword(self):
-    #     passwordLength =8
+    def test_generatePassword(self):
+        passwordLength =8
 
-    #     self.passwordGenerator(passwordLength)
-    #     self.assertEqual(len(Credentials.password),8)
+        Credentials.passwordGenerator(self)
+        
 
 
 
