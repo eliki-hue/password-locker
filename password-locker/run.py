@@ -56,7 +56,7 @@ def main():
                         new_account = Credentials(name, username, password)
                         Credentials.saveAccount(new_account) # create and save new account.
                         print ('\n')
-                        print(f"New Account credentials {user_name} {password} for {name} account created")
+                        print(f"New Account credentials with account name: {name}   username: {user_name}  and  password: {password}  has been created")
                         print ('\n')
 
                 elif short_code == 'dc':
@@ -66,7 +66,7 @@ def main():
                                 print('\n')
 
                                 for account in Credentials.displayAccounts():
-                                        print(f"account name: {account.accountName}     username: {account.userName} password: {account.password}")
+                                        print(f"account name: {account.accountName}     username: {account.userName}      password: {account.password}")
 
                                 print('\n')
                         else:
