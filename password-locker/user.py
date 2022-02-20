@@ -12,10 +12,10 @@ class User:
         self.loginName = loginName
         self.loginPassword = loginPassword
 
-    def saveLoginInfo(self):
+    def saveLoginInfo(user):
         '''
         function that saves the users login information
         '''
-        User.user_login_information.append(self)
+        User.user_login_information.append(user)
 
    
