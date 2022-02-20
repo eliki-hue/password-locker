@@ -30,6 +30,12 @@ class TestCredentials(unittest.TestCase):
         self.new_account.saveAccount()
         self.assertEqual(len(Credentials.accountsCredentials),1)
 
+    def tearDown(self):
+        '''
+        tearDown method that does clean up after each test case run
+        '''
+        Credentials.accountsCredentials = []
+
     def test_viewCredentials(self):
         '''
         test function for viewCredentials function, it returns a list of  all accounts
@@ -45,7 +51,15 @@ class TestCredentials(unittest.TestCase):
         test_account.saveAccount()
 
         self.new_account.deleteAccount()
-        self.assertEqual(len(Credentials.accountsCredentials),2)
+        self.assertEqual(len(Credentials.accountsCredentials),1)
+
+    # def test_generatePassword(self):
+    #     passwordLength =8
+
+    #     self.passwordGenerator(passwordLength)
+    #     self.assertEqual(len(Credentials.password),8)
+
+
 
         
 

@@ -29,6 +29,9 @@ class TestUser(unittest.TestCase):
         self.new_user.saveLoginInfo() #saving the user lgin information
         self.assertEqual(len(User.user_login_information),1)
 
+   
+
+
 
 if __name__ == '__main__':
     unittest.main()
