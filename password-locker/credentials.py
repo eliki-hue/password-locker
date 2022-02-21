@@ -48,7 +48,7 @@ class Credentials:
         '''
         
         characters = list(string.ascii_letters + string.digits)
-        passwordLength = int(input("Enter the password length: "))
+        passwordLength = int(input("Enter the password length: ")) # enables the user to choose the password length
 
         random.shuffle(characters) # mixes the letters and numbers
         
@@ -61,7 +61,7 @@ class Credentials:
 
             password =(''.join(passwordList)) # converts the passwordList to string
             print(password)
-            likePassword = confirm("Do you like the generated password? ")
+            likePassword = confirm("Do you like the generated password? ")  #let the user decide whether they like the generated password, else a different one is generated
             
             if likePassword:
                 generateAnotherPassword =False
